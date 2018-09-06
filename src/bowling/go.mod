@@ -1,1 +1,1 @@
-module bowliing
+module bowling
