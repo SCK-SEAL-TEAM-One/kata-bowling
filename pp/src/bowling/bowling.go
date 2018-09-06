@@ -4,6 +4,10 @@ type Frame struct {
 	Rolls []string
 }
 
-func Calculate(point []Frame) int {
-	return 300
+func Calculate(point []int) int {
+	sum := 0
+	for _, num := range point {
+		sum += num
+	}
+	return sum
 }

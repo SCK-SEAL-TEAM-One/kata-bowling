@@ -8,38 +8,7 @@ import (
 func Test_Calculate_12_Rolls_All_Strike_Should_Be_300_Point(t *testing.T) {
 	expectedPoints := 300
 
-	inputPlay := []Frame{
-		Frame{
-			Rolls: []string{"x", "x"},
-		},
-		Frame{
-			Rolls: []string{"x", "x"},
-		},
-		Frame{
-			Rolls: []string{"x", "x"},
-		},
-		Frame{
-			Rolls: []string{"x", "x"},
-		},
-		Frame{
-			Rolls: []string{"x", "x"},
-		},
-		Frame{
-			Rolls: []string{"x", "x"},
-		},
-		Frame{
-			Rolls: []string{"x", "x"},
-		},
-		Frame{
-			Rolls: []string{"x", "x"},
-		},
-		Frame{
-			Rolls: []string{"x", "x"},
-		},
-		Frame{
-			Rolls: []string{"x", "x", "x"},
-		},
-	}
+	inputPlay := []int{30, 30, 30, 30, 30, 30, 30, 30, 30, 30}
 
 	actualResult := Calculate(inputPlay)
 	if expectedPoints != actualResult {
